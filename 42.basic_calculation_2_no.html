@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // class calculator{
+        //     constructor(first_num,second_num){
+        //         this.first_num=first_num,
+        //         this.second_num=second_num
+        //     }
+        //     sum(){
+        //         document.write(this.first_num+this.second_num)
+        //     }
+        //      sub(){
+        //         document.write(this.first_num-this.second_num)
+        //     }
+        //      mul(){
+        //         document.write(this.first_num*this.second_num)
+        //     }
+        //      div(){
+        //         document.write(this.first_num/this.second_num)
+        //     }
+        //      }
+        // const c=new calculator(10,20)
+        // c.sum()
+        // // c.sub()
+        // // c.mul()
+        // // c.div()
+
+
+
+
+
+        // class calculator{
+        //     constructor(first_num,second_num){
+        //         this.first_num=first_num,
+        //         this.second_num=second_num
+        //     }
+        //     sum(){
+        //         document.write(this.first_num+this.second_num)
+        //     }
+        //      sub(){
+        //         document.write(this.first_num-this.second_num)
+        //     }
+        //      mul(){
+        //         document.write(this.first_num*this.second_num)
+        //     }
+        //      div(){
+        //         document.write(this.first_num/this.second_num)
+        //     }
+        //      }
+        //      let n1= parseInt(prompt("Enter first no:"));
+        //      let n2= parseInt(prompt("Enter second no:"));
+        // const c=new calculator(n1,n2)
+        // c.sum()
+        // // c.sub()
+        // // c.mul()
+        // // c.div()
+
+
+        class calculator {
+            constructor(n1, n2) {
+                this.n1 = n1;
+                this.n2 = n2;
+            }
+
+            sum() {
+                return this.n1 + this.n2;
+            }
+
+            sub() {
+                return this.n1 - this.n2;
+            }
+
+            mul() {
+                return this.n1 * this.n2;
+            }
+
+            div() {
+                return this.n1 / this.n2;
+            }
+        }
+
+        let n1 = parseInt(prompt("Enter first number:"));
+        let n2 = parseInt(prompt("Enter second number:"));
+
+        const c = new calculator(n1, n2);
+
+        let result = `Sum: ${c.sum()}
+Subtraction: ${c.sub()}
+Multiplication: ${c.mul()}
+Division: ${c.div()}
+`;
+
+        alert(result);  // किंवा console.log(result);
+    </script>
+
+</body>
+
+</html>

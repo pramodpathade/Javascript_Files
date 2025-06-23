@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let str="DONE"
+        document.write (str +"<br>")
+//  padStart Done ke pahele o srting add karega
+
+        document.write  (str.padStart("10", "*")+"<br>")
+
+        // padEnd Done ke bad o srting add karega
+
+    document.write(str.padEnd(10,"#") +"<br>")
+
+
+    // index of - pahele vala index number count karega
+    let msg="javascript is fun"
+    document.write(msg +"<br>")
+    document.write(msg.indexOf("fun") +"<br>")
+
+
+     // last index of - pt ke pehele vala string ka ya p ke pehle vale letter ka index no count karke dega
+   
+    document.write(msg.lastIndexOf("pt") +"<br>")
+
+
+    // repeate : repeate mai jo value add karoge utni baar value repeate karega
+
+    document.write(msg.repeat(2)+"<br>")
+
+
+    // startwidth
+     let sakshu="javascript is fun"
+    document.write(sakshu+"<br>")
+
+    // a bydefault true or false mai o/p dega
+    
+// startwith: startwith mai string pehele letter vali ho to hi o/p true melega aur baad vale letter add karoge to o/p false milega
+    document.write(sakshu.startsWith("f")+"<br>")
+
+    // endsWith: endsWith mai string end letter vali ho to hi o/p true melega aur pehele vale letter add karoge to o/p false milega
+
+
+    document.write(sakshu.endsWith("n")+"<br>")
+    document.write(sakshu.startsWith("javascript")+"<br>")
+
+
+
+    
+
+    </script>
+</body>
+</html>

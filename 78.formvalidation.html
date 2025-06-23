@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- html-
+    required- 
+    maxlength-
+    placeholder-
+    min-
+    max- -->
+
+    <!-- javascript-
+    empty-
+    length-
+    cpass == pass -->
+
+    <form action="">
+        Enter username:
+        <input type="text" name="" id="t1"><br><br>
+
+        Enter password:
+        <input type="password" name="" id="t2"><br><br>
+        Enter your confiom passwaord:
+        <input type="password" name="" id="t3"><br><br>
+        Entr Age:
+        <input type="number" name="" id="t4"><br><br>
+
+        Enter contact:
+        <input type="text" name="" id="t5"><br><br>
+
+        <input type="button" value="register" onclick="validation()">
+
+        <span id="s1"></span>
+
+    </form>
+    <script>
+        function validation(){
+            let uname= document.getElementById("t1").value
+            let pass= document.getElementById("t2").value
+            let cpass= document.getElementById("t3").value
+            let age= document.getElementById("t4").value
+            let contact= document.getElementById("t5").value
+
+            let r =""
+
+            if(uname.length==0){
+                r += "username should not be empty" +"<br>"
+            }
+
+             if(pass.length==0){
+                r += "password should not be empty" +"<br>"
+            }
+            if(pass !== cpass){
+                r += "pass and cpass should be same" +"<br>"
+            }
+            if(uname == pass){
+                r += "username and password should not be same" +"<br>"
+            }
+            if (age.length !==0){
+                if(age < 18 || age > 25){
+                    r += "age shoule be between 18 to 25" +"<br>"
+                }
+            }else{
+                r += "age should not be empty" +"<br>"
+            }
+        //     if(contact.length !==0){
+        //         if(contact.length > 10 || contact.legth < 10){
+        //             r += "contact should be 10 digit only" +"<br>" 
+
+        //         }
+        //     }
+               
+                
+        //          else{
+        //             r += "contact should not be empty"
+            
+        // }
+
+        if (contact === "") {
+  r += "Contact should not be empty<br>";
+} 
+else if (contact.length !== 10) {
+  r += "Contact should be exactly 10 digits only<br>";
+}
+            document.getElementById("s1").innerHTML = r
+
+        }
+    </script>
+
+</body>
+</html>

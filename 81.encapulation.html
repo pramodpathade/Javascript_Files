@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <script>
+      class Bank {
+        constructor(name, acc_no, balance) {
+          this.name = name;
+          this.acc_no = acc_no;
+          let _balance = balance;
+
+          this.info = function () {
+            console.log("Name of the acc holder is:", this.name);
+            console.log("Acc no is:", this.acc_no);
+            console.log("Balance is:", this.getbalance());
+          };
+
+          this.deposit = function (amt) {
+            _balance += amt;
+          };
+
+          this.withdraw = function (amt) {
+            _balance -= amt;
+          };
+
+          this.updated = function () {
+            console.log("Current balance is:", this.getbalance());
+          };
+
+          this.getbalance = function () {
+            return _balance;
+          };
+        }
+      }
+
+      const b = new Bank("som", 1234, 5000);
+      b.info();
+      b.name = "john";
+      b.info();
+      b.balance=5000000
+      b.info()
+
+
+      // b.deposit (2000)
+      // b.info()
+      // b.widthdraw (1000)
+      // b.info()
+
+</script>
+ </body>
+</html>

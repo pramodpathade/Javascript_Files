@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function my_fun(){
+      var a = 10;
+      var b = 2;
+
+      try {
+        if(b == 0){
+          throw("divide by zero error");
+        } else {
+          var c = a / b;
+          document.write("Result: " + c + "<br>");
+        }
+      } catch(error) {
+        document.write("Caught Error: " + error + "<br>");
+      } finally {
+        document.write("Finally block executed.<br>");
+      }
+    }
+
+    my_fun();
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function my_fun(){
+      var a = 10;
+      var b = 2;
+
+      try {
+        if(b == 0){
+          throw("divide by zero error");
+        } else {
+          var c = a / b;
+          document.write("Result: " + c + "<br>");
+        }
+      } catch(error) {
+        document.write("Caught Error: " + error + "<br>");
+      } finally {
+        document.write("Finally block executed.<br>");
+      }
+    }
+
+    my_fun();
+  </script>
+</body>
+</html>

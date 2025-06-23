@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- setintervals() -->
+     <!-- har ek secondanantar current time milto -->
+     <h1 id="demo"></h1>
+     <script>
+        setInterval (myfunction,1000)
+        function myfunction(){
+            let d=new Date()
+            document.getElementById("demo").innerHTML=d.getHours()+": "+d.getMinutes()+" :"+d.getSeconds()
+        }
+
+
+
+// har ek 2 second baad my sakshu o/p milega
+        // setInterval(myfunction,2000)
+        // function myfunction(){
+        //     document.write("my sakshu"+"  ")
+        // }
+     </script>
+    
+</body>
+</html>

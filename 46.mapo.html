@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let num=[10,20,30]
+        // num2=num*2
+        // document.write(num2)
+        // map method
+       
+
+
+    // Array
+    let num = [10, 20, 30];
+
+    // map method वापरून प्रत्येक element * 2 करतो
+    let num2 = num.map(calculate);
+
+    // Output
+    document.write(num2); // Output: 20,40,60
+
+    // Function with parameter
+    function calculate(value) {
+      return value * 2;
+    }
+ 
+
+
+    </script>
+    
+</body>
+</html>

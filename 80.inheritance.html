@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class car{
+            constructor(brand){
+                this.brand=brand
+            }
+            allData(){
+                return "Name of the brand is:"+this.brand
+            }
+        }
+        class kia extends car{
+            constructor(brand,year){
+                super(brand)
+                this.year = year
+
+            }
+            kiaData(){
+                return this.allData() + "   "+"<br>" +"year is:"+this.year
+            }
+        }
+        let k = new kia("fortuner",1999)
+        // console.log (k.kiaData())
+        document.write(k.kiaData())
+    </script>
+</body>
+</html>

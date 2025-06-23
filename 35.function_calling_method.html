@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // # 3Types of calling methods:
+        // 1] call function()
+        // 2] apply function()
+        // 3] bind function()
+
+        const person={
+            fullname:function(){
+                return this.firstname+" "+this.lastname;
+            }
+        }
+        const person1={
+            firstname:"prama",
+            lastname:"pathade"
+        }
+         const person2={
+            firstname:"Sakshu",
+            lastname:"pathade"
+        }
+         const person3={
+            firstname:"Nadim",
+            lastname:"shaikh"
+        }
+        document.write(person.fullname.call(person1)+"<br>")
+        document.write(person.fullname.apply(person2)+"<br>")
+        document.write(person.fullname.bind(person3)()+"<br>")
+    </script>
+    
+</body>
+</html>

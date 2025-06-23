@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q1] create a student data
+        // syntax: class classname{
+            // constructor (parameter)
+            // this.parameter=parameter}
+            // methods
+        // }
+
+
+
+        // class student{
+        //     constructor(name,age){
+        //     this.name=name,
+        //     this.age=age
+        //     }
+        // }
+        // const s=new student("sakshu",20)
+        // document.write(s.name,"<br>")
+        // document.write(s.age)
+
+
+
+        
+        class student{
+            constructor(name,age){
+            this.name=name,
+            this.age=age
+            }
+        }
+        let name= prompt("Enter your name:");
+        let age= parseInt(prompt("Enter your age:"));
+
+        const s = new student(name,age)
+
+        document.write(s.name,"<br>")
+        document.write(s.age)
+
+       
+
+
+    </script>
+    
+</body>
+</html>

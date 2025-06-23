@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<script>
+  class Cat {
+    constructor(name) {
+      this.name = name;
+    }
+
+    display() {
+      document.write("name of the cat is: ", this.name, "<br>");
+    }
+  }
+
+  const c = new Cat("kitty");
+
+  class Dog {
+    constructor(name) {
+      this.name = name;
+    }
+
+    display() {
+      document.write("name of the dog is: ", this.name, "<br>");
+    }
+  }
+
+  const d = new Dog("rocky");
+
+  function info(o) {
+    o.display();
+  }
+
+  info(c); // will print: name of the cat is: kitty
+  info(d); // will print: name of the dog is: rocky
+</script>
+</body>
+</html>
